@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      /* CSS styles for the text elements */
+      body {
+        background: linear-gradient(
+          to right bottom,
+          #dddddd,
+          #dddddd
+        );
+        overflow: hidden; 
+      }
+
+      #logo {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        transform: translateY(-50%);
+        padding: 20px;
+        user-select: none;
+      }
+      #text {
+        position: absolute;
+        top: 30%;
+        right: 2.5%;
+        padding: 20px;
+        font-weight: bold; /* Add bold styling */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 44px; /* Increase the font size */
+        color: white;
+        user-select: none; 
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none;
+      }
+
+      #description {
+        position: absolute;
+        bottom: 7.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 16px; 
+        color: white;
+        user-select: none; 
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="pear2.png" alt="Logo" draggable="false" />
+    </div>
+    <canvas id="webgl"></canvas>
+    <div id="text">THE BRAND NEW ZPHONE 3.</div>
+    <div id="description">INTRODUCING THE SLEEK AND POWERFUL PHONE THAT REVOLUTIONIZES YOUR DIGITAL EXPERIENCE!</div>
+    <script type="module" src="/three.js"></script>
+  </body>
+</html>
